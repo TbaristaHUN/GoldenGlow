@@ -1,0 +1,124 @@
+body {
+    background-color: #f9f9f9; 
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+#page-logo a {
+    color: rgb(245, 243, 160);
+}
+
+header a {
+    color: rgb(164, 139, 0);
+}
+
+header nav a:hover {
+    color: rgb(77, 77, 77);
+    background-color: rgb(255, 251, 0);
+}
+
+main {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+#contact-section {
+    background-image: url('Photos/nevjegy.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;             
+    width: 100%;
+    margin-top: 0;             
+    margin-bottom: 50px; 
+    border-radius: 0 0 16px 16px; 
+}
+
+.contact-list {
+    width: 700px; 
+    margin: 0 0 80px 0;        
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-card {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
+    border: 1px solid rgba(164, 139, 0, 0.15); 
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-content h3 {
+    font-family: "Cinzel", sans-serif;
+    color: rgb(164, 139, 0);
+    margin: 0 0 5px 0;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(164, 139, 0, 0.2);
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.card-content p {
+    font-family: "Cinzel", sans-serif;
+    color: #555555;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Telefonszám kiemelése */
+.phone {
+    font-size: 18px;
+    color: #111111;
+}
+
+.actions {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.actions a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(255, 217, 0); 
+    color: #111111;
+    font-family: "Cinzel", sans-serif;
+    font-weight: bold;
+    padding: 10px 22px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions a:hover {
+    background-color: rgb(255, 235, 70);
+}
+
+@media (max-width: 768px) {
+    .contact-list {
+        width: 90%;
+    }
+    .card-content {
+        padding: 25px;
+        text-align: center;
+    }
+    .actions {
+        text-align: center;
+    }
+}

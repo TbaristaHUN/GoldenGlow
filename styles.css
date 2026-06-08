@@ -40,6 +40,34 @@
     border-radius: 16px; 
 }
 
+#kapcsolat-section {
+    background-image: url('Photos/nevjegy.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px; 
+    border-radius: 16px; 
+}
+
+#contact-section {
+    background-image: url('Photos/nevjegy.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px; 
+    border-radius: 16px; 
+}
+
 .hero-content {
     background-color: rgba(0, 0, 0, 0.65); 
     padding: 40px 60px;

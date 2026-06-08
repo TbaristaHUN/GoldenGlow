@@ -85,3 +85,7 @@ footer img {
     object-fit: contain; 
     display: block;
 }
+
+main ul, main li {
+    list-style: none;
+}
