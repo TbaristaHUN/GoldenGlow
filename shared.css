@@ -92,14 +92,14 @@ main ul, main li {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Egymás alá rakja a logót és a menüt */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
         padding: 15px 0;
     }
 
     nav ul {
-        flex-direction: column; /* A menüpontok is egymás alá kerülnek */
+        flex-direction: column; 
         gap: 10px;
         padding: 0;
         margin-top: 10px;
