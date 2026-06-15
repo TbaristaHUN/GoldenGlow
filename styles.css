@@ -181,3 +181,51 @@
     font-weight: 400;
     color: #222222;
 }
+
+@media (max-width: 768px) {
+    #hero {
+        height: 500px;
+    }
+
+#fodraszat-section, 
+    #kozmetika-section, 
+    #kapcsolat-section, 
+    #contact-section {
+        height: 350px !important;
+        border-radius: 8px;
+    }
+
+    .hero-content {
+        padding: 20px 25px !important;
+        width: 85% !important;
+    }
+    
+    .hero-content h1 {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content a {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .services-container {
+        padding: 0 20px;
+    }
+
+    .services-container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    .service-item {
+        flex-direction: row; 
+        font-size: 0.95rem;
+    }
+}
