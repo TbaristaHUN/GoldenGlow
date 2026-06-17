@@ -105,3 +105,25 @@ main ul, main li {
         margin-top: 10px;
     }
 }
+
+.service-btn {
+    display: none; 
+    position: absolute; 
+    width: 3rem;
+    height: 2.5rem;
+    background: none;
+    border: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.service-btn span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(164, 139, 0);
+    border-radius: 2px;
+}
