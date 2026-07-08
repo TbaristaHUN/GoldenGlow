@@ -47,7 +47,6 @@ Axios POST integráció:** Az aszinkron HTTP kérés megírása az űrlap elkül
 
 Lokális futtatás
 
-1. Klónozd a repót:
    git clone (https://github.com/TbaristaHUN/GoldenGlow.git)
 
 <img width="1920" height="1243" alt="Képernyőfotó 2026-07-08 - 20 35 25" src="https://github.com/user-attachments/assets/ea22818c-62ce-47b6-a0f6-c55d48a81a31" />
