@@ -4,13 +4,13 @@ Egy modern, letisztult és reszponzív bemutató és online időpontfoglaló web
 
 Projekt Célkitűzés & MVP Logika
 
-A weboldal fejlesztése során az **MVP (Minimum Viable Product)** szemléletet követtem. Bonyolult háttérrendszerek (adatbázisok, felhasználói fiókok kezelése, GDPR-kockázatos jelszókezelés) helyett egy kliensoldali, API-vezérelt hibrid architektúrát alkalmaztam.
+A weboldal fejlesztése során az MVP (Minimum Viable Product) szemléletet követtem. Bonyolult háttérrendszerek (adatbázisok, felhasználói fiókok kezelése, GDPR-kockázatos jelszókezelés) helyett egy kliensoldali, API-vezérelt hibrid architektúrát alkalmaztam.
 
 A foglalási folyamat logikája:
-1. **Szolgáltatás kiválasztása:** A vendég az árlapon checkboxok segítségével összeválogatja a kívánt kezeléseket.
-2. **Dinamikus kalkuláció:** A JavaScript (DOM) valós időben számolja a végösszeget és összesíti a kiválasztott elemeket.
-3. **Regisztrációmentes checkout:** A vendég megadja a nevét és telefonszámát egy biztonságos, írásvédett (`readonly`) űrlapon.
-4. **API Kommunikáció:** Az adatok megerősítése után a háttérben egy **Axios HTTP POST** kérés továbbítja az adatokat egy külső API szolgáltatónak, amely azonnali formázott e-mail értesítést küld a szalon munkatársainak.
+1. Szolgáltatás kiválasztása: A vendég az árlapon checkboxok segítségével összeválogatja a kívánt kezeléseket.
+2. Dinamikus kalkuláció: A JavaScript (DOM) valós időben számolja a végösszeget és összesíti a kiválasztott elemeket.
+3. Regisztrációmentes checkout:** A vendég megadja a nevét és telefonszámát egy biztonságos, írásvédett (`readonly`) űrlapon.
+4. API Kommunikáció: Az adatok megerősítése után a háttérben egy **Axios HTTP POST** kérés továbbítja az adatokat egy külső API szolgáltatónak, amely azonnali formázott e-mail értesítést küld a szalon munkatársainak.
 
 Alkalmazott Technológiák
 
@@ -36,14 +36,14 @@ A globális és lokális CSS stílusok szinkronizálásával a foglalási oldal 
 
 3. Biztonságos Adatbekérés
 Elkészült a foglalási űrlap kliensoldali validációja (`required` attribútumok).
-A *Választott szakember* és *Választott szolgáltatás* mezők `readonly` védelmet kaptak, hogy a felhasználó ne tudjon manuálisan hibás adatot bevinni – ezeket a JS automatikusan fogja tölteni.
+A  Választott szakember és Választott szolgáltatás mezők `readonly` védelmet kaptak, hogy a felhasználó ne tudjon manuálisan hibás adatot bevinni – ezeket a JS automatikusan fogja tölteni.
 
 Ütemterv (Következő lépések)
 
-Lokális Adatbázis felépítése (JS):** A fodrászati és kozmetikai szolgáltatások, árak és szakemberek strukturálása JavaScript objektumtömbökbe.
-DOM és Form összekötés:** Checkbox eseményfigyelők lefejlesztése, amelyek automatikusan feltöltik a `readonly` input mezőket a kiválasztott elemekkel.
-Végösszeg-kalkulátor:** Dinamikus matematikai logika implementálása a kiválasztott elemek árai alapján.
-Axios POST integráció:** Az aszinkron HTTP kérés megírása az űrlap elküldéséhez és az e-mail API triggereléséhez.
+Lokális Adatbázis felépítése (JS): A fodrászati és kozmetikai szolgáltatások, árak és szakemberek strukturálása JavaScript objektumtömbökbe.
+DOM és Form összekötés: Checkbox eseményfigyelők lefejlesztése, amelyek automatikusan feltöltik a `readonly` input mezőket a kiválasztott elemekkel.
+Végösszeg-kalkulátor: Dinamikus matematikai logika implementálása a kiválasztott elemek árai alapján.
+Axios POST integráció: Az aszinkron HTTP kérés megírása az űrlap elküldéséhez és az e-mail API triggereléséhez.
 
 Lokális futtatás
 
