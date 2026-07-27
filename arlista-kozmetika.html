@@ -7,10 +7,49 @@
     <link rel="icon" type="image/png" href="favicon_io/apple-touch-icon.png"/>
     <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Golden Glow</title>
+    <title>Golden Glow - Kozmetika Árlista</title>
 </head>
+
+<style>
+    .service-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .service-name {
+        flex-grow: 1;
+    }
+    .service-price {
+        font-weight: bold;
+        color: #555;
+        white-space: nowrap;
+        margin-right: 10px;
+    }
+    .booking-btn {
+        display: inline-block;
+        background-color: rgb(255, 217, 0);
+        color: black;
+        text-decoration: none;
+        padding: 6px 14px;
+        font-weight: bold;
+        border-radius: 4px;
+        font-family: "Cinzel", sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        transition: background-color 0.2s;
+        white-space: nowrap;
+    }
+    .booking-btn:hover {
+        background-color: rgb(255, 235, 70);
+    }
+</style>
+
 <body>
-<header> 
+    <header> 
         <div id="page-logo">
             <a href="index.html">Golden Glow</a>
         </div>
@@ -28,138 +67,173 @@
             <div class="services-container">
                 
                 <h2>Szolgáltatásaink & Áraink</h2>
-                <div class="service-category">
-                    <h3>Bőrápolás & Masszázs</h3>
-                    <div class="service-item">
-                        <span class="service-name">Arctisztító kezelés</span>
-                        <span class="service-price">14.900 Ft</span>
+                
+                <div class="services-grid">
+                    
+                    <div class="service-category">
+                        <h3>Bőrápolás & Masszázs</h3>
+                        <div class="service-item">
+                            <span class="service-name">Arctisztító kezelés</span>
+                            <span class="service-price">14.900 Ft</span>
+                            <a href="form.html?serviceId=k_arctisztitas"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Kollagénes Bőrfeltöltő kezelés</span>
+                            <span class="service-price">15.900 Ft</span>
+                            <a href="form.html?serviceId=k_kollagenes_borfeltolto"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Hialuronsavas Anti-Aging kezelés</span>
+                            <span class="service-price">15.900 Ft</span>
+                            <a href="form.html?serviceId=k_hialuronsavas_anti"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">C-vitaminos kezelés</span>
+                            <span class="service-price">15.900 Ft</span>
+                            <a href="form.html?serviceId=k_c-vitamin"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Bőrdiagnosztika</span>
+                            <span class="service-price">9.900 Ft</span>
+                            <a href="form.html?serviceId=k_bordiagnosztika"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Hideg-meleg terápiás bőrvasalás</span>
+                            <span class="service-price">6.500 Ft</span>
+                            <a href="form.html?serviceId=k_hidegmeleg_terapias"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Arcmasszázs</span>
+                            <span class="service-price">7.000 Ft</span>
+                            <a href="form.html?serviceId=k_arcmasszazs"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Arc-nyak-dekoltázs masszázs</span>
+                            <span class="service-price">9.500 Ft</span>
+                            <a href="form.html?serviceId=k_arcnyak"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Luxus kényeztető kezelés</span>
+                            <span class="service-price">22.000 Ft</span>
+                            <a href="form.html?serviceId=k_luxus_kenyezteto"></a>
+                        </div>
                     </div>
-                    <div class="service-item">
-                        <span class="service-name">Kollagénes Bőrfeltöltő kezelés</span>
-                        <span class="service-price">15.900 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Hialuronsavas Anti-Aging kezelés</span>
-                        <span class="service-price">15.900 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">C-vitaminos kezelés</span>
-                        <span class="service-price">15.900 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Bőrdiagnosztika</span>
-                        <span class="service-price">9.900 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Hideg-meleg terápiás bőrvasalás</span>
-                        <span class="service-price">6.500 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Arcmasszázs</span>
-                        <span class="service-price">7.000 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Arc-nyak-dekoltázs masszázs</span>
-                        <span class="service-price">9.500 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Luxus kényeztető kezelés</span>
-                        <span class="service-price">22.000 Ft</span>
-                    </div>
-                </div>
 
-                <div class="service-category">
-                    <h3>Szőrtelenítés & Alapkezelések</h3>
-                    <div class="service-item">
-                        <span class="service-name">Bajusz gyanta</span>
-                        <span class="service-price">2.000 Ft</span>
+                    <div class="service-category">
+                        <h3>Szőrtelenítés & Alapkezelések</h3>
+                        <div class="service-item">
+                            <span class="service-name">Bajusz gyanta</span>
+                            <span class="service-price">2.000 Ft</span>
+                            <a href="form.html?serviceId=k_bajusz_gyanta"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Hónalj gyanta</span>
+                            <span class="service-price">2.500 Ft</span>
+                            <a href="form.html?serviceId=k_honalj_gyanta"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Teljes intim gyanta</span>
+                            <span class="service-price">8.000 Ft</span>
+                            <a href="form.html?serviceId=k_teljesintim_gyanta"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Bikini vonal gyanta</span>
+                            <span class="service-price">4.000 Ft</span>
+                            <a href="form.html?serviceId=k_bikinivonal_gyanta"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Teljes láb gyanta</span>
+                            <span class="service-price">7.000 Ft</span>
+                            <a href="form.html?serviceId=k_teljeslab_gyanta"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Comb gyanta</span>
+                            <span class="service-price">3.900 Ft</span>
+                            <a href="form.html?serviceId=k_comb_gyanta"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Lábszár gyanta</span>
+                            <span class="service-price">4.200 Ft</span>
+                            <a href="form.html?serviceId=k_labszar_gyanta"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Kar gyanta</span>
+                            <span class="service-price">4.500 Ft</span>
+                            <a href="form.html?serviceId=k_kar_gyanta"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Fülbelövés</span>
+                            <span class="service-price">19.000 Ft</span>
+                            <a href="form.html?serviceId=k_fulbeloves"></a>
+                        </div>
                     </div>
-                    <div class="service-item">
-                        <span class="service-name">Hónalj gyanta</span>
-                        <span class="service-price">2.500 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Teljes intim gyanta</span>
-                        <span class="service-price">8.000 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Bikini vonal gyanta</span>
-                        <span class="service-price">4.000 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Teljes láb gyanta</span>
-                        <span class="service-price">7.000 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Comb gyanta</span>
-                        <span class="service-price">3.900 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Lábszár gyanta</span>
-                        <span class="service-price">4.200 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Kar gyanta</span>
-                        <span class="service-price">4.500 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Fülbelövés</span>
-                        <span class="service-price">19.000 Ft</span>
-                    </div>
-                </div>
 
-                <div class="service-category">
-                    <h3>Szempilla & Szemöldök styling</h3>
-                    <div class="service-item">
-                        <span class="service-name">Műszempilla Építés új szett</span>
-                        <span class="service-price">17.000 Ft</span>
+                    <div class="service-category">
+                        <h3>Szempilla & Szemöldök styling</h3>
+                        <div class="service-item">
+                            <span class="service-name">Műszempilla Építés új szett</span>
+                            <span class="service-price">17.000 Ft</span>
+                            <a href="form.html?serviceId=k_muszempilla_epites"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Műszempilla töltése</span>
+                            <span class="service-price">14.000 Ft</span>
+                            <a href="form.html?serviceId=k_muszempilla_toltes"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Szempilla lifting</span>
+                            <span class="service-price">13.000 Ft</span>
+                            <a href="form.html?serviceId=k_szempilla_lifting"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Szemöldök laminálás</span>
+                            <span class="service-price">13.000 Ft</span>
+                            <a href="form.html?serviceId=k_szemoldok_laminalas"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Henna szemöldök styling</span>
+                            <span class="service-price">7.500 Ft</span>
+                            <a href="form.html?serviceId=k_henna_szemoldok"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Szemöldök szedés</span>
+                            <span class="service-price">2.500 Ft</span>
+                            <a href="form.html?serviceId=k_szemoldok_szedes"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Szemöldök festés</span>
+                            <span class="service-price">2.900 Ft</span>
+                            <a href="form.html?serviceId=k_szemoldok_festes"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Szempilla festés</span>
+                            <span class="service-price">2.900 Ft</span>
+                            <a href="form.html?serviceId=k_szempilla_festes"></a>
+                        </div>
                     </div>
-                    <div class="service-item">
-                        <span class="service-name">Műszempilla töltése</span>
-                        <span class="service-price">14.000 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Szempilla lifting</span>
-                        <span class="service-price">13.000 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Szemöldök laminálás</span>
-                        <span class="service-price">13.000 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Henna szemöldök styling</span>
-                        <span class="service-price">7.500 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Szemöldök szedés</span>
-                        <span class="service-price">2.500 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Szemöldök festés</span>
-                        <span class="service-price">2.900 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Szempilla festés</span>
-                        <span class="service-price">2.900 Ft</span>
-                    </div>
-                </div>
 
-                <div class="service-category">
-                    <h3>Sminkek</h3>
-                    <div class="service-item">
-                        <span class="service-name">Nappali smink</span>
-                        <span class="service-price">11.500 Ft</span>
+                    <div class="service-category">
+                        <h3>Sminkek</h3>
+                        <div class="service-item">
+                            <span class="service-name">Nappali smink</span>
+                            <span class="service-price">11.500 Ft</span>
+                            <a href="form.html?serviceId=k_nappali_smink"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Alkalmi smink</span>
+                            <span class="service-price">13.500 Ft</span>
+                            <a href="form.html?serviceId=k_alkalmi_smink"></a>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Menyasszonyi smink</span>
+                            <span class="service-price">15.000 Ft</span>
+                            <a href="form.html?serviceId=k_menyasszonyi_smink"</a>
+                        </div>
                     </div>
-                    <div class="service-item">
-                        <span class="service-name">Alkalmi smink</span>
-                        <span class="service-price">13.500 Ft</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-name">Menyasszonyi smink</span>
-                        <span class="service-price">15.000 Ft</span>
-                    </div>
-                </div>
 
+                </div>
             </div>
         </section>
     </main>
+</body>
+</html>
