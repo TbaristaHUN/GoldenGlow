@@ -127,3 +127,11 @@ main ul, main li {
     background-color: rgb(164, 139, 0);
     border-radius: 2px;
 }
+
+footer .site-credit {
+    margin: 12px 0 0;
+    padding: 0 16px;
+    text-align: center;
+    color: #ddd;
+    font-size: 0.875rem;
+}
