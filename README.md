@@ -38,12 +38,6 @@ A globális és lokális CSS stílusok szinkronizálásával a foglalási oldal 
 Elkészült a foglalási űrlap kliensoldali validációja (`required` attribútumok).
 A  Választott szakember és Választott szolgáltatás mezők `readonly` védelmet kaptak, hogy a felhasználó ne tudjon manuálisan hibás adatot bevinni – ezeket a JS automatikusan fogja tölteni.
 
-Ütemterv (Következő lépések)
-
-Lokális Adatbázis felépítése (JS): A fodrászati és kozmetikai szolgáltatások, árak és szakemberek strukturálása JavaScript objektumtömbökbe.
-DOM és Form összekötés: Checkbox eseményfigyelők lefejlesztése, amelyek automatikusan feltöltik a `readonly` input mezőket a kiválasztott elemekkel.
-Végösszeg-kalkulátor: Dinamikus matematikai logika implementálása a kiválasztott elemek árai alapján.
-Axios POST integráció: Az aszinkron HTTP kérés megírása az űrlap elküldéséhez és az e-mail API triggereléséhez.
 
 Lokális futtatás
 
