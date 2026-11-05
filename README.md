@@ -28,6 +28,3 @@ Oldalak és fájlok
 | `Photos/` | Fotók és ikonok |
 
 A weboldal statikus HTML- és CSS-fájlokból áll, ezért a helyi megtekintéshez nincs szükség build lépésre vagy adatbázisra. 
-
-<img width="2559" height="1187" alt="image" src="https://github.com/user-attachments/assets/ec2372d9-2cbc-4b92-8028-2106a11ec81a" />
-<img width="2546" height="1267" alt="image" src="https://github.com/user-attachments/assets/737920b6-859b-46f1-a4dd-5246d98a9277" />
