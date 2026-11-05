@@ -1,46 +1,34 @@
-Golden Glow – Fodrászat & Kozmetika Weboldal
+Golden Glow – Ahol a szépség és a feltöltődés kéz a kézben jár
 
-Egy modern, letisztult és reszponzív bemutató és online időpontfoglaló weboldal a debreceni Golden Glow szépségszalon számára. A projekt célja egy prémium felhasználói élményt nyújtó, gyors és regisztrációmentes foglalási folyamat biztosítása a vendégek számára, miközben minimalizálja az adminisztrációs terheket a szalon dolgozói számára. 
+A debreceni Golden Glow szépségszalon reszponzív bemutatkozó weboldala. 
+A látogatók megismerhetik a szalon szakembereit, áttekinthetik a szolgáltatásokat és az árakat, valamint megtalálhatják a szalon elérhetőségeit. 
 
-Projekt Célkitűzés & MVP Logika
+Funkciók
 
-A weboldal fejlesztése során az MVP (Minimum Viable Product) szemléletet követtem. Bonyolult háttérrendszerek (adatbázisok, felhasználói fiókok kezelése, GDPR-kockázatos jelszókezelés) helyett egy kliensoldali, API-vezérelt hibrid architektúrát alkalmaztam.
+- Fodrászati és kozmetikai szolgáltatások és árlisták
+- A szalon szakembereinek bemutatása
+- Közvetlen linkek a szakemberek Instagram-profiljához időpontkéréshez
+- Mobilon és asztali böngészőben is használható elrendezés
 
-A foglalási folyamat logikája:
-1. Szolgáltatás kiválasztása: A vendég az árlapon checkboxok segítségével összeválogatja a kívánt kezeléseket.
-2. Dinamikus kalkuláció: A JavaScript (DOM) valós időben számolja a végösszeget és összesíti a kiválasztott elemeket.
-3. Regisztrációmentes checkout:** A vendég megadja a nevét és telefonszámát egy biztonságos, írásvédett (`readonly`) űrlapon.
-4. API Kommunikáció: Az adatok megerősítése után a háttérben egy **Axios HTTP POST** kérés továbbítja az adatokat egy külső API szolgáltatónak, amely azonnali formázott e-mail értesítést küld a szalon munkatársainak.
+Technológiák
 
-Alkalmazott Technológiák
+- HTML5 az oldalak tartalmához és szerkezetéhez
+- CSS3 az arculathoz és a reszponzív elrendezéshez
+- Flexbox, CSS Grid és médialekérdezések az elemek elrendezéséhez
+- Cinzel betűtípus a Google Fonts kínálatából
 
-Frontend:
-HTML5: Szemantikus struktúra, tiszta dokumentum-hierarchia és egyedi `data-` attribútumok az adatátvitelhez.
-CSS3: Egyedi arculat design, flexbox elrendezések és médialekérdezések (`@media`) a teljes mobil-reszponzivitás érdekében.
-Vanilla JavaScript: Kliensoldali üzleti logika, DOM manipuláció és eseménykezelés (`addEventListener`) - (fejlesztés alatt).
+Oldalak és fájlok
 
-Hálózat és API:
-Axios (CDN): Ígéret-alapú (Promise-based) HTTP-kliens a külső API-kkal való aszinkron kommunikációhoz (fejlesztés alatt).
+| Fájl vagy mappa | Tartalom |
+| --- | --- |
+| `index.html` | Főoldal |
+| `szolgaltatasok.html` | A szolgáltatások áttekintése |
+| `arlista-fodrasz.html` | Fodrászati árlista |
+| `arlista-kozmetika.html` | Kozmetikai és körmös árlisták |
+| `rolunk.html` | A szalon szakembereinek bemutatása |
+| `kapcsolat.html` | A szalon elérhetőségei |
+| `shared.css` | Az oldalak közös stílusai |
+| `Photos/` | Fotók és ikonok |
 
----
-
-Jelenlegi Fejlesztési Állapot (Elvégzett feladatok)
-
-1. Oldalstruktúra és Navigáció
-Elkészült a teljes moduláris felépítés: Főoldal (`index.html`), `szolgaltatasok.html`, bemutatkozó oldal (`rolunk.html`) és a dedikált foglalási felület (`form.html`).
-Kialakításra került az egységes, reszponzív footer a közösségi média ikonokkal és linkekkel.
-
-2. Arculati Konzisztencia (UI/UX)
-Integrálásra kerültek a Google Fonts betűcsaládjai (*Cinzel* a prémium hatású főcímekhez, *Fira Sans* a jól olvasható form-szövegekhez).
-A globális és lokális CSS stílusok szinkronizálásával a foglalási oldal is megkapta a szalonra jellemző arany arculatot (`rgb(245, 243, 160)`), text-shadow effektusokat és a letisztult kártya-alapú űrlap elrendezést.
-
-3. Biztonságos Adatbekérés
-Elkészült a foglalási űrlap kliensoldali validációja (`required` attribútumok).
-A  Választott szakember és Választott szolgáltatás mezők `readonly` védelmet kaptak, hogy a felhasználó ne tudjon manuálisan hibás adatot bevinni – ezeket a JS automatikusan fogja tölteni.
-
-
-Lokális futtatás
-
-   git clone (https://github.com/TbaristaHUN/GoldenGlow.git)
-
-<img width="1920" height="1243" alt="Képernyőfotó 2026-07-08 - 20 35 25" src="https://github.com/user-attachments/assets/ea22818c-62ce-47b6-a0f6-c55d48a81a31" />
+A weboldal statikus HTML- és CSS-fájlokból áll, ezért a helyi
+megtekintéshez nincs szükség build lépésre vagy adatbázisra. 
